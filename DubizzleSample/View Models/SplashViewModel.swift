@@ -10,17 +10,14 @@ import ReactiveSwift
 import Domain
 import Platform
 
-protocol SplashViewModelType {
-  var complete: Action<Void, Void, Never> { get }
-  var appVersion: Property<(version: String?, build: String?)> { get }
-  var currentYear: Property<Int> { get }
-}
-
-class SplashViewModel: SplashViewModelType {
+class SplashViewModel: SplashViewModelType, SplashViewModelInputs, SplashViewModelOutputs {
   let completed: Signal<Void, Never>
   let complete: Action<Void, Void, Never>
   let appVersion: Property<(version: String?, build: String?)>
   let currentYear: Property<Int>
+    
+  var inputs: SplashViewModelInputs { return self }
+  var outputs: SplashViewModelOutputs { return self }
 
   init() {
     complete = Action { _ in

@@ -13,6 +13,7 @@
 		62FBD44F25E14D09009A5614 /* GetProductListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBD44B25E14D09009A5614 /* GetProductListUseCase.swift */; };
 		62FBD45025E14D09009A5614 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBD44D25E14D09009A5614 /* ProductList.swift */; };
 		62FBDA9A25E1871C009A5614 /* Environmentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDA9925E1871C009A5614 /* Environmentable.swift */; };
+		62FBE4EF25E28CC3009A5614 /* ProductListSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE4EE25E28CC3009A5614 /* ProductListSpecs.swift */; };
 		97E38406CEACD4B177A18641 /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCE1DE434FA669C43B83701 /* Pods_Domain_DomainTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		62FBD44B25E14D09009A5614 /* GetProductListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProductListUseCase.swift; sourceTree = "<group>"; };
 		62FBD44D25E14D09009A5614 /* ProductList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		62FBDA9925E1871C009A5614 /* Environmentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environmentable.swift; sourceTree = "<group>"; };
+		62FBE4EE25E28CC3009A5614 /* ProductListSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListSpecs.swift; sourceTree = "<group>"; };
 		6BE9776C24DCD3BB9C31B737 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		ABCE1DE434FA669C43B83701 /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE13BDA16E6E6F8115ADE11F /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		62FBD3C125E14A86009A5614 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				62FBE4EB25E28C7B009A5614 /* Models */,
 				62FBD3C425E14A86009A5614 /* Info.plist */,
 			);
 			path = DomainTests;
@@ -137,6 +140,14 @@
 			children = (
 				62FBD44D25E14D09009A5614 /* ProductList.swift */,
 				62FBDA9925E1871C009A5614 /* Environmentable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62FBE4EB25E28C7B009A5614 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62FBE4EE25E28CC3009A5614 /* ProductListSpecs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 					};
 					62FBD3BC25E14A86009A5614 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -326,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FBE4EF25E28CC3009A5614 /* ProductListSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +532,7 @@
 			baseConfigurationReference = AE13BDA16E6E6F8115ADE11F /* Pods-Domain-DomainTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23G4UNKM6C;
 				INFOPLIST_FILE = DomainTests/Info.plist;
@@ -529,6 +543,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DomainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -539,6 +554,7 @@
 			baseConfigurationReference = FEF84803DB1752A45E428F19 /* Pods-Domain-DomainTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23G4UNKM6C;
 				INFOPLIST_FILE = DomainTests/Info.plist;

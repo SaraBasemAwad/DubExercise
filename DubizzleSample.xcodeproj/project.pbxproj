@@ -37,8 +37,6 @@
 		62FBDAC125E18996009A5614 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDAC025E18996009A5614 /* SplashView.swift */; };
 		62FBDAC325E189CE009A5614 /* NibDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDAC225E189CE009A5614 /* NibDesignableView.swift */; };
 		62FBDAC525E18A43009A5614 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FBDAC425E18A43009A5614 /* SplashView.xib */; };
-		62FBDAC725E18B49009A5614 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FBDAC625E18B49009A5614 /* Splash.storyboard */; };
-		62FBDAC925E18C49009A5614 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDAC825E18C49009A5614 /* ViewController.swift */; };
 		62FBDACB25E18F41009A5614 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FBDACA25E18F41009A5614 /* SplashViewController.xib */; };
 		62FBDAEA25E1AACC009A5614 /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FBDAE925E1AACB009A5614 /* ProductDetailsViewController.xib */; };
 		62FBDAEC25E1AADA009A5614 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDAEB25E1AADA009A5614 /* ProductDetailsViewController.swift */; };
@@ -54,6 +52,10 @@
 		62FBDB8E25E25C47009A5614 /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDB8D25E25C47009A5614 /* ImageViewExtensions.swift */; };
 		62FBE1D725E27373009A5614 /* DubizzleSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */; };
 		62FBE28E25E27D14009A5614 /* ProductListViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE28D25E27D14009A5614 /* ProductListViewModelSpecs.swift */; };
+		62FBE4F425E28E0B009A5614 /* AppVersionHelpersSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE4F325E28E0B009A5614 /* AppVersionHelpersSpecs.swift */; };
+		62FBE4F725E28FAE009A5614 /* ModalContainerViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE4F625E28FAE009A5614 /* ModalContainerViewModelSpecs.swift */; };
+		62FBE4FD25E2912B009A5614 /* SplashViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE4FC25E2912B009A5614 /* SplashViewModelType.swift */; };
+		62FBE50125E292A4009A5614 /* ProductDetailsViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE50025E292A4009A5614 /* ProductDetailsViewModelSpecs.swift */; };
 		EAAAFA891BCEA5B16A1BEF5D /* Pods_DubizzleSample_DubizzleSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B3ACFA88FD2E8A42B8287 /* Pods_DubizzleSample_DubizzleSampleTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,8 +123,6 @@
 		62FBDAC025E18996009A5614 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		62FBDAC225E189CE009A5614 /* NibDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignableView.swift; sourceTree = "<group>"; };
 		62FBDAC425E18A43009A5614 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
-		62FBDAC625E18B49009A5614 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		62FBDAC825E18C49009A5614 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62FBDACA25E18F41009A5614 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		62FBDAE925E1AACB009A5614 /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
 		62FBDAEB25E1AADA009A5614 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +141,10 @@
 		62FBE1D825E27373009A5614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62FBE28D25E27D14009A5614 /* ProductListViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelSpecs.swift; sourceTree = "<group>"; };
 		62FBE39925E2886E009A5614 /* Cuckoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cuckoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FBE4F325E28E0B009A5614 /* AppVersionHelpersSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionHelpersSpecs.swift; sourceTree = "<group>"; };
+		62FBE4F625E28FAE009A5614 /* ModalContainerViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContainerViewModelSpecs.swift; sourceTree = "<group>"; };
+		62FBE4FC25E2912B009A5614 /* SplashViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelType.swift; sourceTree = "<group>"; };
+		62FBE50025E292A4009A5614 /* ProductDetailsViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModelSpecs.swift; sourceTree = "<group>"; };
 		8EF0BFC8FF5227D368A293FD /* Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DubizzleSample-DubizzleSampleTests/Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A08746015CF361C42B96AFB1 /* Pods-DubizzleSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DubizzleSampleTests/Pods-DubizzleSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE1B3ACFA88FD2E8A42B8287 /* Pods_DubizzleSample_DubizzleSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DubizzleSample_DubizzleSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,7 +207,6 @@
 				62FBCDE125E0FF2B009A5614 /* Assets.xcassets */,
 				62FBCDE325E0FF2B009A5614 /* LaunchScreen.storyboard */,
 				62FBCDE625E0FF2B009A5614 /* Info.plist */,
-				62FBDAC825E18C49009A5614 /* ViewController.swift */,
 			);
 			path = DubizzleSample;
 			sourceTree = "<group>";
@@ -217,7 +220,6 @@
 				62FBDAC025E18996009A5614 /* SplashView.swift */,
 				62FBDAC225E189CE009A5614 /* NibDesignableView.swift */,
 				62FBDAC425E18A43009A5614 /* SplashView.xib */,
-				62FBDAC625E18B49009A5614 /* Splash.storyboard */,
 				62FBDACA25E18F41009A5614 /* SplashViewController.xib */,
 				62FBDB8825E249B0009A5614 /* ModalContainerViewController.swift */,
 				62FBDB8A25E249FF009A5614 /* ModalContainerViewController.xib */,
@@ -271,6 +273,7 @@
 				62FBDB7E25E24818009A5614 /* ProductDetailsViewModel.swift */,
 				62FBDB8025E24913009A5614 /* ModalContainerViewModel.swift */,
 				62FBDB8225E2491B009A5614 /* ModalContainerViewModelType.swift */,
+				62FBE4FC25E2912B009A5614 /* SplashViewModelType.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 		62FBE1D525E27373009A5614 /* DubizzleSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				62FBE4F225E28DF9009A5614 /* Common */,
 				62FBE28B25E27CF7009A5614 /* View Models */,
 				62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */,
 				62FBE1D825E27373009A5614 /* Info.plist */,
@@ -325,8 +329,18 @@
 			isa = PBXGroup;
 			children = (
 				62FBE28D25E27D14009A5614 /* ProductListViewModelSpecs.swift */,
+				62FBE4F625E28FAE009A5614 /* ModalContainerViewModelSpecs.swift */,
+				62FBE50025E292A4009A5614 /* ProductDetailsViewModelSpecs.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		62FBE4F225E28DF9009A5614 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				62FBE4F325E28E0B009A5614 /* AppVersionHelpersSpecs.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		7FB0028DBE66EB241F9A7538 /* Pods */ = {
@@ -452,7 +466,6 @@
 				62FBD99925E15B4B009A5614 /* ProductTableViewCell.xib in Resources */,
 				62FBDACB25E18F41009A5614 /* SplashViewController.xib in Resources */,
 				62FBCDE225E0FF2B009A5614 /* Assets.xcassets in Resources */,
-				62FBDAC725E18B49009A5614 /* Splash.storyboard in Resources */,
 				62FBDAEA25E1AACC009A5614 /* ProductDetailsViewController.xib in Resources */,
 				62FBD99A25E15B4B009A5614 /* ProductListViewController.xib in Resources */,
 			);
@@ -566,6 +579,7 @@
 				62FBDAEE25E1B01A009A5614 /* ProductDetailsCoordinator.swift in Sources */,
 				62FBDB7D25E247AF009A5614 /* ProductDetailsViewModelType.swift in Sources */,
 				62FBD9A425E15B4B009A5614 /* ProductPresentableModel.swift in Sources */,
+				62FBE4FD25E2912B009A5614 /* SplashViewModelType.swift in Sources */,
 				62FBDABF25E18943009A5614 /* AppVersionHelpers.swift in Sources */,
 				62FBD99625E15B4B009A5614 /* BaseViewController.swift in Sources */,
 				62FBD99F25E15B4B009A5614 /* Coordinator.swift in Sources */,
@@ -581,7 +595,6 @@
 				62FBD99B25E15B4B009A5614 /* ProductListCoordinator.swift in Sources */,
 				62FBDAF125E1B2C4009A5614 /* ProductListCoordinatorProvider.swift in Sources */,
 				62FBDB8725E2497C009A5614 /* ModalContainerController.swift in Sources */,
-				62FBDAC925E18C49009A5614 /* ViewController.swift in Sources */,
 				62FBD99D25E15B4B009A5614 /* WindowType.swift in Sources */,
 				62FBDAC125E18996009A5614 /* SplashView.swift in Sources */,
 			);
@@ -592,7 +605,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				62FBE1D725E27373009A5614 /* DubizzleSampleTests.swift in Sources */,
+				62FBE50125E292A4009A5614 /* ProductDetailsViewModelSpecs.swift in Sources */,
 				62FBE28E25E27D14009A5614 /* ProductListViewModelSpecs.swift in Sources */,
+				62FBE4F425E28E0B009A5614 /* AppVersionHelpersSpecs.swift in Sources */,
+				62FBE4F725E28FAE009A5614 /* ModalContainerViewModelSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

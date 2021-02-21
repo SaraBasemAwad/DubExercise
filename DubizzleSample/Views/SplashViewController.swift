@@ -36,14 +36,14 @@ class SplashViewController: BaseViewController {
       UIView.animate(withDuration: fadeInDuration, animations: {
         self.splashView.alpha = self.fadeInAlpha.end
       }, completion: { _ in
-        self.viewModel.complete.apply().start()
+        self.viewModel.inputs.complete.apply().start()
       })
     }
   }
 
 private extension SplashViewController {
   func configureBindings() {
-    splashView.versionLabel.reactive.text <~ viewModel.appVersion.map { version, build in
+    splashView.versionLabel.reactive.text <~ viewModel.inputs.appVersion.map { version, build in
       return AppVersionHelpers.formatVersion(version, build: build)
     }
   }

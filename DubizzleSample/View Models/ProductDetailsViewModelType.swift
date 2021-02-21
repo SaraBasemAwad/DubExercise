@@ -8,12 +8,12 @@
 import ReactiveSwift
 
 protocol ProductDetailsViewModelInputs {
-  var dismiss: Action<Void, Never, Never> { get }
+   var dismiss: Action<Void, Never, Never> { get }
     var cancel: Action<Void, Void, Never> { get }
 }
 
 protocol ProductDetailsViewModelOutputs {
-  var product: Property<ProductPresentableModel?> { get }
+    var product: Property<ProductPresentableModel?> { get }
     var onCancel: Signal<Void, Never> { get }
 }
 
