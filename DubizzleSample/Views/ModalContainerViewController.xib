@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalContainerViewController" customModule="DubizzleSample" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="eJa-i9-eeA" id="zaa-4N-nfg"/>
+                <outlet property="view" destination="seE-EW-6wK" id="a0f-MP-Req"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="seE-EW-6wK">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.75999999046325684" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzZ-5g-EQo">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eJa-i9-eeA" userLabel="Container Stack View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="862"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="GJl-pC-rBO"/>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="0.75687607020000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eJa-i9-eeA" firstAttribute="leading" secondItem="GJl-pC-rBO" secondAttribute="leading" id="DHi-j7-bxJ"/>
+                <constraint firstItem="eJa-i9-eeA" firstAttribute="top" secondItem="GJl-pC-rBO" secondAttribute="top" id="GGj-Bx-xqS"/>
+                <constraint firstItem="RzZ-5g-EQo" firstAttribute="leading" secondItem="GJl-pC-rBO" secondAttribute="leading" id="Jfn-R4-eZm"/>
+                <constraint firstItem="GJl-pC-rBO" firstAttribute="trailing" secondItem="eJa-i9-eeA" secondAttribute="trailing" id="L7E-sj-cCw"/>
+                <constraint firstItem="RzZ-5g-EQo" firstAttribute="top" secondItem="seE-EW-6wK" secondAttribute="top" id="fag-so-1UT"/>
+                <constraint firstItem="RzZ-5g-EQo" firstAttribute="trailing" secondItem="GJl-pC-rBO" secondAttribute="trailing" id="gP4-01-CrA"/>
+                <constraint firstItem="eJa-i9-eeA" firstAttribute="height" secondItem="RzZ-5g-EQo" secondAttribute="height" id="vIa-mp-83r"/>
+                <constraint firstItem="RzZ-5g-EQo" firstAttribute="bottom" secondItem="GJl-pC-rBO" secondAttribute="bottom" id="xUM-W1-R1P"/>
+            </constraints>
+            <point key="canvasLocation" x="14.648437499999998" y="40.625"/>
+        </view>
+    </objects>
+</document>
