@@ -1,15 +1,21 @@
 PODS:
   - Alamofire (5.4.1)
+  - Cuckoo (1.4.1):
+    - Cuckoo/Swift (= 1.4.1)
+  - Cuckoo/Swift (1.4.1)
   - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
+  - Kiwi (3.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - Moya/ReactiveSwift (14.0.0):
     - Moya/Core
     - ReactiveSwift (~> 6.0)
+  - Nimble (9.0.0)
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - Quick (3.1.2)
   - ReactiveCocoa (11.1.0):
     - ReactiveSwift (~> 6.2)
   - ReactiveSwift (6.5.0)
@@ -36,7 +42,11 @@ PODS:
     - ObjcExceptionBridging
 
 DEPENDENCIES:
+  - Cuckoo
+  - Kiwi
   - Moya/ReactiveSwift
+  - Nimble
+  - Quick
   - ReactiveCocoa
   - ReactiveSwift
   - RestKit/Network
@@ -47,9 +57,13 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Cuckoo
     - ISO8601DateFormatterValueTransformer
+    - Kiwi
     - Moya
+    - Nimble
     - ObjcExceptionBridging
+    - Quick
     - ReactiveCocoa
     - ReactiveSwift
     - RestKit
@@ -62,9 +76,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Cuckoo: 4625f7f54d9bb880123270e8969898d6c1d036b5
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  Quick: 60f0ea3b8e0cfc0df3259a5c06a238ad8b3c46e0
   ReactiveCocoa: 7bc87ad2d361b9de141278b1950edd7fe91b15b1
   ReactiveSwift: 8d159904084e908856cde90b2e28823f3c7e485f
   RestKit: 0baa8b61899d1e00c24f4f2d8aea07ecef0c88bc
@@ -75,6 +93,6 @@ SPEC CHECKSUMS:
   Wormholy: 2e70f64227e010d363f8d33268369f77faf12471
   XCGLogger: 1943831ef907df55108b0b18657953f868de973b
 
-PODFILE CHECKSUM: c0df81c2814133d4943b37e6d0af967c83fdc93c
+PODFILE CHECKSUM: f5757fe249717231cabb4ec5cb6b4b3b4d83cff6
 
 COCOAPODS: 1.9.3

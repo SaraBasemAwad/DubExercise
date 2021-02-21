@@ -1,8 +1,12 @@
 ${PODS_ROOT}/Target Support Files/Pods-DubizzleSample/Pods-DubizzleSample-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework
 ${BUILT_PRODUCTS_DIR}/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework
+${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework
 ${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
+${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework
 ${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework
+${BUILT_PRODUCTS_DIR}/Quick/Quick.framework
 ${BUILT_PRODUCTS_DIR}/RKValueTransformers/RKValueTransformers.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework

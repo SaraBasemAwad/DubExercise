@@ -10,7 +10,6 @@ import ReactiveSwift
 import Domain
 
 class ProductListViewModel: ProductListViewModelType, ProductListViewModelInputs, ProductListViewModelOutputs {
-    
     let load: Action<Void, Domain.ProductList, Error>
     let selectProduct: Action<ProductPresentableModel, ProductPresentableModel, Never>
     let products: Property<[ProductPresentableModel]>

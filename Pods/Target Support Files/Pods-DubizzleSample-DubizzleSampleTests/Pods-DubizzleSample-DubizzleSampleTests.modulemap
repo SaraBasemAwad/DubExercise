@@ -1,0 +1,6 @@
+framework module Pods_DubizzleSample_DubizzleSampleTests {
+  umbrella header "Pods-DubizzleSample-DubizzleSampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
