@@ -21,7 +21,7 @@ class ProductListViewModelSpecs: QuickSpec {
 //        var getProductListUseCase: MockGetProductListViewModel!
         var scheduler: TestScheduler!
 //        let tableUtilization = TableUtilization.createStub()
-        
+
         beforeEach {
             scheduler = TestScheduler()
 //            getProductListUseCase = mockGetProductListUseCase(result: .success(productList))

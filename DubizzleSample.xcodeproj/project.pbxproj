@@ -54,7 +54,6 @@
 		62FBDB8E25E25C47009A5614 /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDB8D25E25C47009A5614 /* ImageViewExtensions.swift */; };
 		62FBE1D725E27373009A5614 /* DubizzleSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */; };
 		62FBE28E25E27D14009A5614 /* ProductListViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE28D25E27D14009A5614 /* ProductListViewModelSpecs.swift */; };
-		62FBE31525E2812A009A5614 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE31425E2812A009A5614 /* GeneratedMocks.swift */; };
 		EAAAFA891BCEA5B16A1BEF5D /* Pods_DubizzleSample_DubizzleSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B3ACFA88FD2E8A42B8287 /* Pods_DubizzleSample_DubizzleSampleTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,7 +140,7 @@
 		62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubizzleSampleTests.swift; sourceTree = "<group>"; };
 		62FBE1D825E27373009A5614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62FBE28D25E27D14009A5614 /* ProductListViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelSpecs.swift; sourceTree = "<group>"; };
-		62FBE31425E2812A009A5614 /* GeneratedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		62FBE39925E2886E009A5614 /* Cuckoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cuckoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF0BFC8FF5227D368A293FD /* Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DubizzleSample-DubizzleSampleTests/Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A08746015CF361C42B96AFB1 /* Pods-DubizzleSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DubizzleSampleTests/Pods-DubizzleSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE1B3ACFA88FD2E8A42B8287 /* Pods_DubizzleSample_DubizzleSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DubizzleSample_DubizzleSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,7 +317,6 @@
 				62FBE28B25E27CF7009A5614 /* View Models */,
 				62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */,
 				62FBE1D825E27373009A5614 /* Info.plist */,
-				62FBE31425E2812A009A5614 /* GeneratedMocks.swift */,
 			);
 			path = DubizzleSampleTests;
 			sourceTree = "<group>";
@@ -349,6 +347,7 @@
 		BA376FA259E2F0504818F227 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62FBE39925E2886E009A5614 /* Cuckoo.framework */,
 				62FBD8E525E157E7009A5614 /* UIKit.framework */,
 				62FBD8E125E157D8009A5614 /* Foundation.framework */,
 				62FBD8BE25E15799009A5614 /* XCTest.framework */,
@@ -593,7 +592,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				62FBE1D725E27373009A5614 /* DubizzleSampleTests.swift in Sources */,
-				62FBE31525E2812A009A5614 /* GeneratedMocks.swift in Sources */,
 				62FBE28E25E27D14009A5614 /* ProductListViewModelSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

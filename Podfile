@@ -23,7 +23,6 @@ end
 
 target 'DubizzleSample' do
  common
- test_common
  
   target 'DubizzleSampleTests' do
     test_common
@@ -34,9 +33,9 @@ target 'Domain' do
   project 'common-ios/Domain/Domain'
   common
 
-#  target 'DomainTests' do
-#    test_common
-#  end
+  target 'DomainTests' do
+    test_common
+  end
 end
 
 target 'Platform' do

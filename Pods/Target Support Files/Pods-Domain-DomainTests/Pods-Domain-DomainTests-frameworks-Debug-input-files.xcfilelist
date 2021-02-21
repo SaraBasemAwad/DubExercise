@@ -1,4 +1,4 @@
-${PODS_ROOT}/Target Support Files/Pods-DubizzleSample-DubizzleSampleTests/Pods-DubizzleSample-DubizzleSampleTests-frameworks.sh
+${PODS_ROOT}/Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework
 ${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
