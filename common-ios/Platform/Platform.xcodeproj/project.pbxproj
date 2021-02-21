@@ -162,6 +162,8 @@
 		62FBD3E725E14A93009A5614 /* PlatformTests */ = {
 			isa = PBXGroup;
 			children = (
+				62FBE71C25E2BA06009A5614 /* Repositories */,
+				62FBE71525E2B991009A5614 /* Use cases */,
 				62FBE1DF25E2739B009A5614 /* Converters */,
 				62FBD3EA25E14A93009A5614 /* Info.plist */,
 			);
@@ -241,6 +243,20 @@
 			path = Converters;
 			sourceTree = "<group>";
 		};
+		62FBE71525E2B991009A5614 /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		62FBE71C25E2BA06009A5614 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -263,6 +279,7 @@
 				62FBD3D625E14A93009A5614 /* Sources */,
 				62FBD3D725E14A93009A5614 /* Frameworks */,
 				62FBD3D825E14A93009A5614 /* Resources */,
+				62FBE71425E2B94D009A5614 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -365,6 +382,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Platform-PlatformTests/Pods-Platform-PlatformTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		62FBE71425E2B94D009A5614 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Platform/Converters/ProductListConverter.swift",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n# Define input directory.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n# Generate mock files, include as many input files as you'd like.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\"\n";
 		};
 		B3E3AAC43B5C559B6298D9E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

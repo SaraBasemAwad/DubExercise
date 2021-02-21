@@ -21,8 +21,6 @@ extension ProductService: ExpectedErrorable {
 }
 
 extension ProductService: TargetType {
-    //Assume this is the base url for all use cases
-    //url(bundle: bundle).appendingPathComponent(Constants.urlContext)
     var baseURL: URL { return Environment.environment.url() }
     
     var path: String {

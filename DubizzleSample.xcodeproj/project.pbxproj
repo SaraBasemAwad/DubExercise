@@ -145,6 +145,7 @@
 		62FBE4F625E28FAE009A5614 /* ModalContainerViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContainerViewModelSpecs.swift; sourceTree = "<group>"; };
 		62FBE4FC25E2912B009A5614 /* SplashViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelType.swift; sourceTree = "<group>"; };
 		62FBE50025E292A4009A5614 /* ProductDetailsViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModelSpecs.swift; sourceTree = "<group>"; };
+		62FBE51825E2A9E6009A5614 /* Cuckoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cuckoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF0BFC8FF5227D368A293FD /* Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DubizzleSample-DubizzleSampleTests/Pods-DubizzleSample-DubizzleSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A08746015CF361C42B96AFB1 /* Pods-DubizzleSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DubizzleSampleTests/Pods-DubizzleSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE1B3ACFA88FD2E8A42B8287 /* Pods_DubizzleSample_DubizzleSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DubizzleSample_DubizzleSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +362,7 @@
 		BA376FA259E2F0504818F227 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62FBE51825E2A9E6009A5614 /* Cuckoo.framework */,
 				62FBE39925E2886E009A5614 /* Cuckoo.framework */,
 				62FBD8E525E157E7009A5614 /* UIKit.framework */,
 				62FBD8E125E157D8009A5614 /* Foundation.framework */,

@@ -33,7 +33,6 @@ class ProductListViewModel: ProductListViewModelType, ProductListViewModelInputs
         
         selectProduct = Action { SignalProducer(value: $0) }
         
-//        selectedProduct <~ selectProduct.values
         mutableSelectedProduct <~ selectProduct.values
         selectedProduct = Property(mutableSelectedProduct)
     }

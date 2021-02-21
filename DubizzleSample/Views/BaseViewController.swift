@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-      return .lightContent
+        return .lightContent
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {

@@ -21,7 +21,7 @@ class ModalContainerController {
   func present() {
     let modalViewController = ModalContainerViewController(with: viewController, viewModel: viewModel)
     modalViewController.modalPresentationStyle = .overFullScreen
-    modalViewController.modalTransitionStyle = .crossDissolve
+    modalViewController.modalTransitionStyle = .coverVertical
 
     presenter.present(modalViewController, animated: true)
   }
