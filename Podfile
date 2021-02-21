@@ -43,7 +43,7 @@ target 'Platform' do
   project 'common-ios/Platform/Platform'
   common
 
-#  target 'PlatformTests' do
-#    test_common
-#  end
+  target 'PlatformTests' do
+    test_common
+  end
 end
