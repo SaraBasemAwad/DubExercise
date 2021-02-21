@@ -9,7 +9,16 @@
 import Foundation
 
 public class CustomHTTPProtocol: URLProtocol {
-    static var blacklistedHosts = [String]()
+    static var ignoredHosts = [String]()
+    @available(*, deprecated, renamed: "ignoredHosts")
+    static var blacklistedHosts: [String] {
+        get {
+            return ignoredHosts
+        }
+        set {
+            ignoredHosts = newValue
+        }
+    }
 
     struct Constants {
         static let RequestHandledKey = "URLProtocolRequestHandled"
@@ -46,7 +55,7 @@ public class CustomHTTPProtocol: URLProtocol {
         sessionTask = session?.dataTask(with: newRequest as URLRequest)
         sessionTask?.resume()
         
-        currentRequest = RequestModel(request: newRequest)
+        currentRequest = RequestModel(request: newRequest, session: session)
         Storage.shared.saveRequest(request: currentRequest)
     }
     
@@ -62,17 +71,10 @@ public class CustomHTTPProtocol: URLProtocol {
     }
     
     private func body(from request: URLRequest) -> Data? {
-        return request.httpBody ?? request.httpBodyStream.flatMap { stream in
-            let data = NSMutableData()
-            stream.open()
-            while stream.hasBytesAvailable {
-                var buffer = [UInt8](repeating: 0, count: 1024)
-                let length = stream.read(&buffer, maxLength: buffer.count)
-                data.append(buffer, length: length)
-            }
-            stream.close()
-            return data as Data
-        }
+        /// The receiver will have either an HTTP body or an HTTP body stream only one may be set for a request.
+        /// A HTTP body stream is preserved when copying an NSURLRequest object,
+        /// but is lost when a request is archived using the NSCoding protocol.
+        return request.httpBody ?? request.httpBodyStream?.readfully()
     }
 
     /// Inspects the request to see if the host has not been blacklisted and can be handled by this URL protocol.
@@ -80,7 +82,7 @@ public class CustomHTTPProtocol: URLProtocol {
     private class func shouldHandleRequest(_ request: URLRequest) -> Bool {
         guard let host = request.url?.host else { return false }
 
-        return CustomHTTPProtocol.blacklistedHosts.filter({ host.hasSuffix($0) }).isEmpty
+        return CustomHTTPProtocol.ignoredHosts.filter({ host.hasSuffix($0) }).isEmpty
     }
     
     deinit {

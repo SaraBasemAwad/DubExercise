@@ -26,6 +26,7 @@
 		62FBD47725E14D43009A5614 /* ProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBD46825E14D43009A5614 /* ProductListResponse.swift */; };
 		62FBD5EE25E15116009A5614 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FBD5ED25E15116009A5614 /* Domain.framework */; };
 		62FBD93325E15920009A5614 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FBD93225E15915009A5614 /* libc++.tbd */; };
+		62FBE1E125E273D6009A5614 /* ProductListConverterSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE1E025E273D6009A5614 /* ProductListConverterSpecs.swift */; };
 		6D474A1076EBAE4F07638F2C /* Pods_Platform_PlatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90110DDE3580AFC16691C2FF /* Pods_Platform_PlatformTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		62FBD5ED25E15116009A5614 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FBD92B25E158F2009A5614 /* Pods_DubizzleSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DubizzleSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FBD93225E15915009A5614 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		62FBE1E025E273D6009A5614 /* ProductListConverterSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListConverterSpecs.swift; sourceTree = "<group>"; };
 		90110DDE3580AFC16691C2FF /* Pods_Platform_PlatformTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Platform_PlatformTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF5E4E1DA154D625E1B2A93 /* Pods-Platform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platform.debug.xcconfig"; path = "Target Support Files/Pods-Platform/Pods-Platform.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 		62FBD3E725E14A93009A5614 /* PlatformTests */ = {
 			isa = PBXGroup;
 			children = (
+				62FBE1DF25E2739B009A5614 /* Converters */,
 				62FBD3EA25E14A93009A5614 /* Info.plist */,
 			);
 			path = PlatformTests;
@@ -222,6 +225,14 @@
 				62FBD46825E14D43009A5614 /* ProductListResponse.swift */,
 			);
 			path = "Response Models";
+			sourceTree = "<group>";
+		};
+		62FBE1DF25E2739B009A5614 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				62FBE1E025E273D6009A5614 /* ProductListConverterSpecs.swift */,
+			);
+			path = Converters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 					};
 					62FBD3E225E14A93009A5614 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -421,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FBE1E125E273D6009A5614 /* ProductListConverterSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +630,7 @@
 			baseConfigurationReference = 23E59ABD51399E91D9DAEC56 /* Pods-Platform-PlatformTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23G4UNKM6C;
 				INFOPLIST_FILE = PlatformTests/Info.plist;
@@ -627,6 +641,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PlatformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -637,6 +652,7 @@
 			baseConfigurationReference = 0F91B0DB5DFC1EE3295258D6 /* Pods-Platform-PlatformTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23G4UNKM6C;
 				INFOPLIST_FILE = PlatformTests/Info.plist;

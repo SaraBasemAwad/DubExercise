@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct ProductListResponse: Decodable {
+ struct ProductListResponse: Decodable {
     public let results: [ProductResponse]
 }
 
 extension ProductListResponse {
-    struct ProductResponse: Decodable {
+     struct ProductResponse: Decodable {
         public let uid: String
         public let created_at: String
         public let name: String

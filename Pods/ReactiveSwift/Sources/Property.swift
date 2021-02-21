@@ -327,6 +327,17 @@ extension PropertyProtocol {
 		return Property(unsafeProducer: SignalProducer.combineLatest(producers))
 	}
 
+	/// Combines the values of all the given `Property`s, in the manner described by
+	/// `combineLatest(with:)`. If `properties` is empty, the resulting `Property` would have `emptySentinel` as its
+	/// constant value.
+	public static func combineLatest<S: Sequence>(
+		_ properties: S,
+		emptySentinel: [S.Iterator.Element.Value]
+	) -> Property<[S.Iterator.Element.Value]> where S.Iterator.Element: PropertyProtocol {
+		let producers = properties.map { $0.producer }
+		return Property(unsafeProducer: SignalProducer.combineLatest(producers, emptySentinel: emptySentinel))
+	}
+
 	/// Zips the values of all the given properties, in the manner described by
 	/// `zip(with:)`.
 	public static func zip<A: PropertyProtocol, B: PropertyProtocol>(_ a: A, _ b: B) -> Property<(Value, B.Value)> where A.Value == Value {
@@ -391,6 +402,17 @@ extension PropertyProtocol {
 
 		return Property(unsafeProducer: SignalProducer.zip(producers))
 	}
+
+	/// Combines the values of all the given `Property`s, in the manner described by
+	/// `zip(with:)`. If `properties` is empty, the resulting `Property` would have `emptySentinel` as its
+	/// constant value.
+	public static func zip<S: Sequence>(
+		_ properties: S,
+		emptySentinel: [S.Iterator.Element.Value]
+	) -> Property<[S.Iterator.Element.Value]> where S.Iterator.Element: PropertyProtocol {
+		let producers = properties.map { $0.producer }
+		return Property(unsafeProducer: SignalProducer.zip(producers, emptySentinel: emptySentinel))
+	}
 }
 
 extension PropertyProtocol where Value == Bool {
@@ -421,6 +443,16 @@ extension PropertyProtocol where Value == Bool {
 	public static func all<P: PropertyProtocol, Properties: Collection>(_ properties: Properties) -> Property<Value> where P.Value == Value, Properties.Element == P {
 		return Property(initial: properties.map { $0.value }.reduce(true) { $0 && $1 }, then: SignalProducer.all(properties))
 	}
+    
+    /// Create a property that computes a logical AND between the latest values of `properties`.
+    ///
+    /// - parameters:
+    ///   - property: Properties to be combined.
+    ///
+    /// - returns: A property that contains the logical AND results.
+    public static func all<P: PropertyProtocol>(_ properties: P...) -> Property<Value> where P.Value == Value {
+        return .all(properties)
+    }
 
 	/// Create a property that computes a logical OR between the latest values of `self`
 	/// and `property`.
@@ -442,6 +474,16 @@ extension PropertyProtocol where Value == Bool {
 	public static func any<P: PropertyProtocol, Properties: Collection>(_ properties: Properties) -> Property<Value> where P.Value == Value, Properties.Element == P {
 		return Property(initial: properties.map { $0.value }.reduce(false) { $0 || $1 }, then: SignalProducer.any(properties))
 	}
+    
+    /// Create a property that computes a logical OR between the latest values of `properties`.
+    ///
+    /// - parameters:
+    ///   - properties: Properties to be combined.
+    ///
+    /// - returns: A property that contains the logical OR results.
+    public static func any<P: PropertyProtocol>(_ properties: P...) -> Property<Value> where P.Value == Value {
+        return .any(properties)
+    }
 }
 
 /// A read-only property that can be observed for its changes over time. There
@@ -470,12 +512,23 @@ extension PropertyProtocol where Value == Bool {
 /// deinitializing.
 ///
 /// Note that composed properties do not retain any of its sources.
+@propertyWrapper
 public final class Property<Value>: PropertyProtocol {
 	private let _value: () -> Value
 
 	/// The current value of the property.
 	public var value: Value {
 		return _value()
+	}
+
+	@inlinable
+	public var wrappedValue: Value {
+		return value
+	}
+
+	@inlinable
+	public var projectedValue: Property<Value> {
+		return self
 	}
 
 	/// A producer for Signals that will send the property's current
@@ -649,6 +702,7 @@ extension Property where Value: OptionalProtocol {
 /// A mutable property of type `Value` that allows observation of its changes.
 ///
 /// Instances of this class are thread-safe.
+@propertyWrapper
 public final class MutableProperty<Value>: ComposableMutablePropertyProtocol {
 	private let token: Lifetime.Token
 	private let observer: Signal<Value, Never>.Observer
@@ -661,6 +715,17 @@ public final class MutableProperty<Value>: ComposableMutablePropertyProtocol {
 	public var value: Value {
 		get { return box.value }
 		set { modify { $0 = newValue } }
+	}
+
+	@inlinable
+	public var wrappedValue: Value {
+		get { value }
+		set { value = newValue }
+	}
+
+	@inlinable
+	public var projectedValue: MutableProperty<Value> {
+		return self
 	}
 
 	/// The lifetime of the property.
@@ -694,6 +759,14 @@ public final class MutableProperty<Value>: ComposableMutablePropertyProtocol {
 		/// `value`. Note that recursive sets will still deadlock because the
 		/// underlying producer prevents sending recursive events.
 		box = PropertyBox(initialValue)
+	}
+
+	/// Initializes a mutable property that first takes on `initialValue`
+	///
+	/// - parameters:
+	///   - initialValue: Starting value for the mutable property.
+	public convenience init(wrappedValue: Value) {
+		self.init(wrappedValue)
 	}
 
 	/// Atomically replaces the contents of the variable.

@@ -52,7 +52,18 @@
 		62FBDB8925E249B0009A5614 /* ModalContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDB8825E249B0009A5614 /* ModalContainerViewController.swift */; };
 		62FBDB8B25E249FF009A5614 /* ModalContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62FBDB8A25E249FF009A5614 /* ModalContainerViewController.xib */; };
 		62FBDB8E25E25C47009A5614 /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBDB8D25E25C47009A5614 /* ImageViewExtensions.swift */; };
+		62FBE1D725E27373009A5614 /* DubizzleSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62FBE1D925E27373009A5614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62FBCDCD25E0FF29009A5614 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62FBCDD425E0FF29009A5614;
+			remoteInfo = DubizzleSample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		62FBD5EA25E150F5009A5614 /* Embed Frameworks */ = {
@@ -122,6 +133,9 @@
 		62FBDB8825E249B0009A5614 /* ModalContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContainerViewController.swift; sourceTree = "<group>"; };
 		62FBDB8A25E249FF009A5614 /* ModalContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalContainerViewController.xib; sourceTree = "<group>"; };
 		62FBDB8D25E25C47009A5614 /* ImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtensions.swift; sourceTree = "<group>"; };
+		62FBE1D425E27373009A5614 /* DubizzleSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DubizzleSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubizzleSampleTests.swift; sourceTree = "<group>"; };
+		62FBE1D825E27373009A5614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08746015CF361C42B96AFB1 /* Pods-DubizzleSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DubizzleSampleTests/Pods-DubizzleSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5B5BDCED3F4341E5FECBF6C /* Pods-DubizzleSample-DubizzleSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubizzleSample-DubizzleSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-DubizzleSample-DubizzleSampleUITests/Pods-DubizzleSample-DubizzleSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F7838CC5901CEB971376430D /* Pods_DubizzleSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DubizzleSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +153,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62FBE1D125E27373009A5614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -146,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				62FBCDD725E0FF29009A5614 /* DubizzleSample */,
+				62FBE1D525E27373009A5614 /* DubizzleSampleTests */,
 				62FBCDD625E0FF29009A5614 /* Products */,
 				7FB0028DBE66EB241F9A7538 /* Pods */,
 				BA376FA259E2F0504818F227 /* Frameworks */,
@@ -156,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				62FBCDD525E0FF29009A5614 /* DubizzleSample.app */,
+				62FBE1D425E27373009A5614 /* DubizzleSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +303,15 @@
 			path = Modal;
 			sourceTree = "<group>";
 		};
+		62FBE1D525E27373009A5614 /* DubizzleSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				62FBE1D625E27373009A5614 /* DubizzleSampleTests.swift */,
+				62FBE1D825E27373009A5614 /* Info.plist */,
+			);
+			path = DubizzleSampleTests;
+			sourceTree = "<group>";
+		};
 		7FB0028DBE66EB241F9A7538 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +363,24 @@
 			productReference = 62FBCDD525E0FF29009A5614 /* DubizzleSample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		62FBE1D325E27373009A5614 /* DubizzleSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62FBE1DD25E27373009A5614 /* Build configuration list for PBXNativeTarget "DubizzleSampleTests" */;
+			buildPhases = (
+				62FBE1D025E27373009A5614 /* Sources */,
+				62FBE1D125E27373009A5614 /* Frameworks */,
+				62FBE1D225E27373009A5614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62FBE1DA25E27373009A5614 /* PBXTargetDependency */,
+			);
+			name = DubizzleSampleTests;
+			productName = DubizzleSampleTests;
+			productReference = 62FBE1D425E27373009A5614 /* DubizzleSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -342,6 +392,10 @@
 				TargetAttributes = {
 					62FBCDD425E0FF29009A5614 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					62FBE1D325E27373009A5614 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 62FBCDD425E0FF29009A5614;
 					};
 				};
 			};
@@ -359,6 +413,7 @@
 			projectRoot = "";
 			targets = (
 				62FBCDD425E0FF29009A5614 /* DubizzleSample */,
+				62FBE1D325E27373009A5614 /* DubizzleSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -377,6 +432,13 @@
 				62FBDAC725E18B49009A5614 /* Splash.storyboard in Resources */,
 				62FBDAEA25E1AACC009A5614 /* ProductDetailsViewController.xib in Resources */,
 				62FBD99A25E15B4B009A5614 /* ProductListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62FBE1D225E27373009A5614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +525,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62FBE1D025E27373009A5614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FBE1D725E27373009A5614 /* DubizzleSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62FBE1DA25E27373009A5614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62FBCDD425E0FF29009A5614 /* DubizzleSample */;
+			targetProxy = 62FBE1D925E27373009A5614 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		62FBCDE325E0FF2B009A5614 /* LaunchScreen.storyboard */ = {
@@ -717,6 +795,46 @@
 			};
 			name = Release;
 		};
+		62FBE1DB25E27373009A5614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23G4UNKM6C;
+				INFOPLIST_FILE = DubizzleSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DubizzleSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DubizzleSample.app/DubizzleSample";
+			};
+			name = Debug;
+		};
+		62FBE1DC25E27373009A5614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23G4UNKM6C;
+				INFOPLIST_FILE = DubizzleSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DubizzleSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DubizzleSample.app/DubizzleSample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,6 +852,15 @@
 			buildConfigurations = (
 				62FBCE0025E0FF2B009A5614 /* Debug */,
 				62FBCE0125E0FF2B009A5614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62FBE1DD25E27373009A5614 /* Build configuration list for PBXNativeTarget "DubizzleSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62FBE1DB25E27373009A5614 /* Debug */,
+				62FBE1DC25E27373009A5614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

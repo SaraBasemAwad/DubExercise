@@ -9,7 +9,7 @@ import Foundation
 import Domain
 
 class ProductListConverter {
-    func from(_ response: ProductListResponse) -> ProductList {
+     func from(_ response: ProductListResponse) -> ProductList {
         return ProductList(products: response.results.map(from))
     }
 }

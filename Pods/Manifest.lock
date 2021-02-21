@@ -10,9 +10,9 @@ PODS:
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
-  - ReactiveCocoa (10.2.0):
+  - ReactiveCocoa (11.1.0):
     - ReactiveSwift (~> 6.2)
-  - ReactiveSwift (6.2.1)
+  - ReactiveSwift (6.5.0)
   - RestKit/Network (0.27.3):
     - RestKit/ObjectMapping
     - RestKit/Support
@@ -29,19 +29,19 @@ PODS:
   - SDWebImage/Core (5.10.4)
   - SOCKit (1.1)
   - TransitionKit (2.2.1)
-  - Wormholy (1.5.0)
+  - Wormholy (1.6.4)
   - XCGLogger (7.0.1):
     - XCGLogger/Core (= 7.0.1)
   - XCGLogger/Core (7.0.1):
     - ObjcExceptionBridging
 
 DEPENDENCIES:
-  - Moya/ReactiveSwift (= 14.0.0)
-  - ReactiveCocoa (= 10.2.0)
-  - ReactiveSwift (= 6.2.1)
-  - RestKit/Network (= 0.27.3)
+  - Moya/ReactiveSwift
+  - ReactiveCocoa
+  - ReactiveSwift
+  - RestKit/Network
   - SDWebImage
-  - Wormholy (= 1.5.0)
+  - Wormholy
   - XCGLogger
 
 SPEC REPOS:
@@ -65,16 +65,16 @@ SPEC CHECKSUMS:
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
-  ReactiveCocoa: a123c42f449c552460a4ee217dd49c76a17c8204
-  ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
+  ReactiveCocoa: 7bc87ad2d361b9de141278b1950edd7fe91b15b1
+  ReactiveSwift: 8d159904084e908856cde90b2e28823f3c7e485f
   RestKit: 0baa8b61899d1e00c24f4f2d8aea07ecef0c88bc
   RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SOCKit: c7376ac262bea9115b8f749358f762522a47d392
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
-  Wormholy: db6ac46a6d20db2d11ddcf975a5a9bcc1abc889e
+  Wormholy: 2e70f64227e010d363f8d33268369f77faf12471
   XCGLogger: 1943831ef907df55108b0b18657953f868de973b
 
-PODFILE CHECKSUM: a156194e524593b03bff18daa7db5fd7cac4a7f8
+PODFILE CHECKSUM: c0df81c2814133d4943b37e6d0af967c83fdc93c
 
 COCOAPODS: 1.9.3
